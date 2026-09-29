@@ -134,41 +134,43 @@
             { round: 10, date: "07/12/2026", matches: [[5,6]] }
         ];
 
-        let matchResults = {}
-    // VÒNG 1 - TRẬN 1 (r1_m0): Đội 1 gặp Đội 8
-    "r1_m0": {
-        team1: 1, team2: 8,
-        score1: 2, score2: 2,
-        potm: "Đoàn Tuấn Minh",
-        goals1: "Lê Huỳnh Đức Huy, Phạm Đình Tùng",
-        goals2: "Đồng Viết Hoàn Tuyên, Nguyễn Ngọc Lâm Anh"
-        assists1: ""
-        assists2: "Đoàn Tuấn Minh",
-        yellow1: "", yellow2: "", red1: "", red2: ""
-    },
+                let matchResults = {
+            // VÒNG 1 - TRẬN 1 (r1_m0): Đội 1 gặp Đội 8
+            "r1_m0": {
+                team1: 1, team2: 8,
+                score1: 2, score2: 2,
+                potm: "Đoàn Tuấn Minh",
+                goals1: "Lê Huỳnh Đức Huy, Phạm Đình Tùng",
+                goals2: "Đồng Viết Hoàn Tuyên, Nguyễn Ngọc Đức",
+                assists1: "",
+                assists2: "Đoàn Tuấn Minh",
+                yellow1: "", yellow2: "", red1: "", red2: ""
+            },
 
-    // VÒNG 1 - TRẬN 2 (r1_m1): Đội 2 gặp Đội 7
-    "r1_m1": {
-        team1: 2, team2: 7,
-        score1: 3, score2: 8,
-        potm: "Nguyễn Bảo Huy",
-        goals1: " Nguyễn Bảo Huy, Nguyễn Bảo Huy, Nguyễn Bảo Huy, Trần Tiến Dũng, Trần Tiến Dũng, Nguyễn Tấn Dũng, Nguyễn Tấn Dũng ",
-        goals2: "Hồ Đức Thắng, Trần Hữu Phúc, Trần Hữu Phúc",
-        assists1: "Nguyễn Trung Quân", assists2: "",
-        yellow1: "", yellow2: "", red1: "", red2: ""
-    },
-   // VÒNG 1 - TRẬN 3 (r1_m2): Đội 3 gặp Đội 6
-    "r1_m2": {
-        team1: 3, team2: 6,
-        score1: 4, score2: 0,
-        potm: "Phạm Nguyễn An Bình",
-        goals1: " Phạm Nguyễn An Bình, Phạm Nguyễn An Bình, Phạm Nguyễn An Bình",
-        goals2: "",
-        assists1: "Phạm Nguyễn An Bình", assists2: "",
-        yellow1: "", yellow2: "", red1: "", red2: ""
-        },
-};
+            // VÒNG 1 - TRẬN 2 (r1_m1): Đội 2 gặp Đội 7
+            "r1_m1": {
+                team1: 2, team2: 7,
+                score1: 3, score2: 8,
+                potm: "Nguyễn Bảo Huy",
+                goals1: "Nguyễn Bảo Huy, Nguyễn Bảo Huy, Nguyễn Bảo Huy",
+                goals2: "Hồ Đức Thắng, Trần Hữu Phúc, Trần Hữu Phúc",
+                assists1: "Nguyễn Trung Quân",
+                assists2: "",
+                yellow1: "", yellow2: "", red1: "", red2: ""
+            },
 
+            // VÒNG 1 - TRẬN 3 (r1_m2): Đội 3 gặp Đội 6
+            "r1_m2": {
+                team1: 3, team2: 6,
+                score1: 4, score2: 0,
+                potm: "Phạm Nguyễn An Bình",
+                goals1: "Phạm Nguyễn An Bình, Phạm Nguyễn An Bình",
+                goals2: "",
+                assists1: "",
+                assists2: "",
+                yellow1: "", yellow2: "", red1: "", red2: ""
+            }
+        };
 
         const urlParams = new URLSearchParams(window.location.search);
         const isAdmin = urlParams.get('admin') === ADMIN_KEY;
