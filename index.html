@@ -134,78 +134,73 @@
             { round: 10, date: "07/12/2026", matches: [[5,6]] }
         ];
 
-                let matchResults = {
-            // VÒNG 1 - TRẬN 1 (r1_m0): Đội 1 gặp Đội 8
-            "r1_m0": {
-                team1: 1, team2: 8,
-                score1: 2, score2: 2,
-                potm: "Đoàn Tuấn Minh",
-                goals1: "Lê Huỳnh Đức Huy, Phạm Đình Tùng",
-                goals2: "Đồng Viết Hoàn Tuyên, Nguyễn Ngọc Đức",
-                assists1: "",
-                assists2: "Đoàn Tuấn Minh",
-                yellow1: "", yellow2: "", red1: "", red2: ""
+        let matchResults = {
+            // VÒNG 1
+            "round1": {
+                "m0": {
+                    team1: 1, team2: 8,
+                    score1: 2, score2: 2,
+                    potm: "Đoàn Tuấn Minh",
+                    goals1: "Lê Huỳnh Đức Huy, Phạm Đình Tùng",
+                    goals2: "Đồng Viết Hoàn Tuyên, Nguyễn Ngọc Đức",
+                    assists1: "",
+                    assists2: "Đoàn Tuấn Minh",
+                    yellow1: "", yellow2: "", red1: "", red2: ""
             },
-
-            // VÒNG 1 - TRẬN 2 (r1_m1): Đội 2 gặp Đội 7
-            "r1_m1": {
-                team1: 2, team2: 7,
-                score1: 8, score2: 3,
-                potm: "Nguyễn Bảo Huy",
-                goals1: "Nguyễn Bảo Huy, Nguyễn Bảo Huy, Nguyễn Bảo Huy, Trần Tiến Dũng, Trần Tiến Dũng, Nguyễn Tấn Dũng, Nguyễn Tấn Dũng",
-                goals2: "Hồ Đức Thắng, Trần Hữu Phúc, Trần Hữu Phúc",
-                assists1: "Trần Tiến Dũng, Nguyễn Trung Quân",
-                assists2: "",
-                yellow1: "", yellow2: "", red1: "", red2: ""
+                "m1": {
+                    team1: 2, team2: 7,
+                    score1: 8, score2: 3,
+                    potm: "Nguyễn Bảo Huy",
+                    goals1: "Nguyễn Bảo Huy, Nguyễn Bảo Huy, Nguyễn Bảo Huy, Trần Tiến Dũng, Trần Tiến Dũng, Nguyễn Tấn Dũng, Nguyễn Tấn Dũng",
+                    goals2: "Hồ Đức Thắng, Trần Hữu Phúc, Trần Hữu Phúc",
+                    assists1: "Trần Tiến Dũng, Nguyễn Trung Quân",
+                    assists2: "",
+                    yellow1: "", yellow2: "", red1: "", red2: ""
             },
-
-            // VÒNG 1 - TRẬN 3 (r1_m2): Đội 3 gặp Đội 6
-            "r1_m2": {
-                team1: 3, team2: 6,
-                score1: 4, score2: 0,
-                potm: "Phạm Nguyễn An Bình",
-                goals1: " Trần Hoàng Thiên Phúc, Phạm Nguyễn An Bình, Phạm Nguyễn An Bình, Phạm Nguyễn An Bình",
-                goals2: "",
-                assists1: "Nguyễn Hoàng Bảo Phúc, Trần Hoàng Thiên Phúc, Phạm Nguyễn An Bình",
-                assists2: "",
-                yellow1: "", yellow2: "", red1: "", red2: ""
+                "m2": {
+                    team1: 3, team2: 6,
+                    score1: 4, score2: 0,
+                    potm: "Phạm Nguyễn An Bình",
+                    goals1: " Trần Hoàng Thiên Phúc, Phạm Nguyễn An Bình, Phạm Nguyễn An Bình, Phạm Nguyễn An Bình",
+                    goals2: "",
+                    assists1: "Nguyễn Hoàng Bảo Phúc, Trần Hoàng Thiên Phúc, Phạm Nguyễn An Bình",
+                    assists2: "",
+                    yellow1: "", yellow2: "", red1: "", red2: ""
+                }
             },
-
-            // VÒNG 2 - TRẬN 1 (r2_m0): Đội 4 gặp Đội 5
-            "r1_m0": {
-                team1: 4, team2: 5,
-                score1: 6, score2: 3,
-                potm: "Tạ Văn Hoàng Phong",
-                goals1: "Nguyễn Bảo Minh, Nguyễn Bảo Minh, Tạ Văn Hoàng Phong, Lê Nguyễn Bảo Nam, Lê Nguyễn Bảo Nam, Tạ Văn Hoàng Phong",
-                goals2: "Trần Quảng Đại, Trần Quảng Đại",
-                assists1: "Tạ Văn Hoàng Phong, Lâm Nguyễn Khánh Huy, Lê Nguyễn Bảo Nam, Tạ Văn Hoàng Phong, Tạ Văn Hoàng Phong",
-                assists2: "Trần Quảng Đại",
-                yellow1: "", yellow2: "", red1: "", red2: ""
+            
+            // VÒNG 2
+            "round2": {
+                "m0": {
+                    team1: 4, team2: 5,
+                    score1: 6, score2: 3,
+                    potm: "Tạ Văn Hoàng Phong",
+                    goals1: "Nguyễn Bảo Minh, Nguyễn Bảo Minh, Tạ Văn Hoàng Phong, Lê Nguyễn Bảo Nam, Lê Nguyễn Bảo Nam, Tạ Văn Hoàng Phong",
+                    goals2: "Trần Quảng Đại, Trần Quảng Đại",
+                    assists1: "Tạ Văn Hoàng Phong, Lâm Nguyễn Khánh Huy, Lê Nguyễn Bảo Nam, Tạ Văn Hoàng Phong, Tạ Văn Hoàng Phong",
+                    assists2: "Trần Quảng Đại",
+                    yellow1: "", yellow2: "", red1: "", red2: ""
             },
-
-            // VÒNG 1 - TRẬN 2 (r2_m1): Đội 1 gặp Đội 7
-            "r1_m1": {
-                team1: 1, team2: 7,
-                score1: 5, score2: 0,
-                potm: "Nguyễn Minh Hùng",
-                goals1: "Lê Đoàn Hoàn Đăng, Phạm Đình Tùng, Nguyễn Minh Hùng, Lê Huỳnh Đức Huy",
-                goals2: "",
-                assists1: "Nguyễn Minh Hùng",
-                assists2: "",
-                yellow1: "", yellow2: "", red1: "", red2: ""
+                "m1": {
+                    team1: 1, team2: 7,
+                    score1: 5, score2: 0,
+                    potm: "Nguyễn Minh Hùng",
+                    goals1: "Lê Đoàn Hoàn Đăng, Phạm Đình Tùng, Nguyễn Minh Hùng, Lê Huỳnh Đức Huy",
+                    goals2: "",
+                    assists1: "Nguyễn Minh Hùng",
+                    assists2: "",
+                    yellow1: "", yellow2: "", red1: "", red2: ""
             },
-
-            // VÒNG 1 - TRẬN 3 (r2_m2): Đội 8 gặp Đội 6
-            "r1_m2": {
-                team1: 8, team2: 6,
-                score1: 0, score2: 3,
-                potm: "",
-                goals1: "",
-                goals2: "",
-                assists1: "",
-                assists2: "",
-                yellow1: "", yellow2: "", red1: "", red2: ""
-            }
+                "m2": {
+                    team1: 8, team2: 6,
+                    score1: 0, score2: 3,
+                    potm: "",
+                    goals1: "",
+                    goals2: "",
+                    assists1: "",
+                    assists2: "",
+                    yellow1: "", yellow2: "", red1: "", red2: ""
+                }
         };
         
         const urlParams = new URLSearchParams(window.location.search);
