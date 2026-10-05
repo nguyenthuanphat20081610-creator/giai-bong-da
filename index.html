@@ -113,7 +113,7 @@
         const teams = [
             { id: 1, name: "Đội 1", captain: "Phạm Đình Tùng", players: ["Lê Đoàn Hoàn Đăng", "Vũ Ngọc Đức", "Nguyễn Minh Hùng", "Lê Huỳnh Đức Huy", "Nguyễn Nhật Trường Khánh", "Nguyễn Vương Khiêm", "Trần Nhật Minh", "Trần Tấn Nam", "Nguyễn Hòa Minh Phát", "Phạm Đình Tùng"] },
             { id: 2, name: "Đội 2", captain: "Trần Tiến Dũng", players: ["Bùi Xuân Bách", "Trần Tiến Dũng", "Nguyễn Quốc Hiệp", "Nguyễn Bảo Huy", "Huỳnh Phú Khải", "Lê Anh Khoa", "Võ Ngọc Trung Nguyên", "Nguyễn Trung Quân", "Nguyễn Hoàng Thạch"] },
-            { id: 3, name: "Đội 3", captain: "Ngô Ngọc Khang", players: ["Phạm Nguyễn An Bình", "Ngô Ngọc Khang", "Trần Anh Kiệt", "Nguyễn Sĩ Minh", "Phùng Gia Nguyễn", "Nguyễn Hoàng Bảo Phúc", "Trần Hoàng Thiên Phúc", "Vũ Minh Triết"] },
+            { id: 3, name: "Đội 3", captain: "Ngô Ngọc Khang", players: ["Phạm Nguyễn An Bình", "Ngô Ngọc Khang", "Trần Anh Kiệt", "Nguyễn Sĩ Minh", "Phùng Gia Nguyễn", "Nguyễn Hoàng Bảo Phúc", "Trần Hoàng Thiên Phúc", "Cao Cường Quốc", "Vũ Minh Triết"] },
             { id: 4, name: "Đội 4", captain: "Nguyễn Thuận Phát", players: ["Đinh Tôn Gia Bình", "Lâm Nguyễn Khánh Huy", "Trần Nhật Hưng", "Tôn Vũ Hoàng Long", "Nguyễn Bảo Minh", "Lê Nguyễn Bảo Nam", "Nguyễn Thuận Phát", "Nguyễn Huỳnh Phi", "Tạ Văn Hoàng Phong", "Nguyễn Văn Thiện Phước"] },
             { id: 5, name: "Đội 5", captain: "Phan Thanh Tuấn", players: ["Nguyễn Bảo An", "Trần Quảng Đại", "Ngô Gia Hạo", "Nguyễn Gia Huy", "Trần Nguyễn Minh Khoa", "Ngô Anh Khôi", "Nguyễn Ngọc Quân", "Phan Thanh Tuấn", "Nguyễn Công Trí", "Phạm Đức Việt"] },
             { id: 6, name: "Đội 6", captain: "Lê Thành Lộc", players: ["Nguyễn Đình Nhật An", "Trần An Dương", "Nguyễn Bình Khang", "Đào Huy Khang", "Lê Thành Lộc", "Nguyễn Hoàng Minh", "Phạm Hoàng Minh", "Trần Long Nguyên", "Lâm Quốc Thắng", "Trần Hữu Trí"] },
@@ -172,6 +172,44 @@
             }
         };
 
+                let matchResults = {
+            // VÒNG 2 - TRẬN 1 (r1_m0): Đội 4 gặp Đội 5
+            "r1_m0": {
+                team1: 4, team2: 5,
+                score1: 6, score2: 3,
+                potm: "Tạ Văn Hoàng Phong",
+                goals1: "Nguyễn Bảo Minh, Nguyễn Bảo Minh, Tạ Văn Hoàng Phong, Lê Nguyễn Bảo Nam, Lê Nguyễn Bảo Nam, Tạ Văn Hoàng Phong",
+                goals2: "Trần Quảng Đại, Trần Quảng Đại",
+                assists1: "Tạ Văn Hoàng Phong, Lâm Nguyễn Khánh Huy, Lê Nguyễn Bảo Nam, Tạ Văn Hoàng Phong, Tạ Văn Hoàng Phong",
+                assists2: "Trần Quảng Đại",
+                yellow1: "", yellow2: "", red1: "", red2: ""
+            },
+
+            // VÒNG 1 - TRẬN 2 (r1_m1): Đội 1 gặp Đội 7
+            "r1_m1": {
+                team1: 1, team2: 7,
+                score1: 5, score2: 0,
+                potm: "Nguyễn Minh Hùng",
+                goals1: "Lê Đoàn Hoàn Đăng, Phạm Đình Tùng, Nguyễn Minh Hùng, Lê Huỳnh Đức Huy",
+                goals2: "",
+                assists1: "Nguyễn Minh Hùng",
+                assists2: "",
+                yellow1: "", yellow2: "", red1: "", red2: ""
+            },
+
+            // VÒNG 1 - TRẬN 3 (r1_m2): Đội 8 gặp Đội 6
+            "r1_m2": {
+                team1: 8, team2: 6,
+                score1: 0, score2: 3,
+                potm: "",
+                goals1: "",
+                goals2: "",
+                assists1: "",
+                assists2: "",
+                yellow1: "", yellow2: "", red1: "", red2: ""
+            }
+        };
+        
         const urlParams = new URLSearchParams(window.location.search);
         const isAdmin = urlParams.get('admin') === ADMIN_KEY;
         if (isAdmin) document.body.classList.add('admin-mode');
